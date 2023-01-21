@@ -1,16 +1,15 @@
 body {
   font-family: "PT Sans", sans-serif;
   background: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
 }
 /* header */
 .container {
   height: 48vw;
   font-size: 1.3vw;
-  font-style: normal;
-  font-weight: 400;
   color: #ffffff;
-  background-image: url("/assets/Header.jpg");
-  border: 1px solid black;
+  background-image: url("../assets/Header.jpg");
   display: grid;
   grid-template-columns: 15% 60% 25%;
   grid-template-rows: 0.5fr 1fr;
@@ -20,14 +19,13 @@ body {
 }
 .logo {
   padding-left: 40%;
-  height: auto;
   align-self: center;
   grid-area: logo;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 .imglogo {
-  width: 8vw;
+  width: 100%;
 }
 .nav {
   padding-left: 40%;
@@ -35,10 +33,10 @@ body {
   grid-area: nav;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
-  color: #ffffff;
 }
 .nav__a {
   padding-left: 2vw;
+  color: #ffffff;
 }
 .number {
   align-self: center;
@@ -53,7 +51,6 @@ body {
   grid-area: base;
   grid-row: 2 / 3;
   grid-column: 1 / 4;
-  color: #ffffff;
 }
 .base__p {
   font-size: 1vw;
@@ -69,11 +66,8 @@ body {
   font-size: 1.5vw;
   font-weight: 50;
 }
-/* main */
-.content {
-  font-style: normal;
-  font-weight: 400;
-}
+/* Создаем не просто красивый сад с картинки, 
+а место, куда захочется возвращаться */
 .section1 {
   display: grid;
   grid-template-columns: 35% 30% 35%;
@@ -107,15 +101,17 @@ body {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
+/*три картинки */
 .section2 {
-  justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 3fr;
+  justify-items: center;
 }
 .section2__img {
   width: 30vw;
 }
+/*Доверьте свой участок профессионалам */
 .section3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,6 +156,110 @@ body {
 .section3__p2 {
   font-size: 1vw;
   padding-left: 10%;
-  margin-top: 10%;
+  padding-top: 5%;
+  width: 70%;
+}
+/*Что мы делаем*/
+.section4 {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+}
+.section4__name {
+  text-align: center;
+  font-weight: 50;
+  font-size: 1.8vw;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+.section4__h3 {
+  margin-top: 0%;
+  font-weight: 50;
+  font-size: 1.5vw;
+}
+.section4__img {
+  width: 10%;
+}
+.section4__cell1 {
+  padding-right: 15%;
+  font-size: 1.5vw;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.section4__cell2 {
+  padding-right: 15%;
+  font-size: 1.5vw;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.section4__cell3 {
+  padding-right: 15%;
+  font-size: 1.5vw;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+.section4__ul {
+  line-height: 170%;
+  font-weight: 40;
+  font-size: 1.1vw;
+}
+.section4__button {
+  position: relative;
+  left: 20%;
+  top: 5%;
   width: 60%;
+  height: 10%;
+  background-color: #545a2f;
+  border: #545a2f;
+  color: #ffffff;
+  font-weight: 40;
+  font-size: 1vw;
+}
+/*Как выбрать растения 
+для сада?*/
+.section5 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.2fr 0.6fr;
+}
+.section5__cell1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+.section5__name {
+  width: 60%;
+  font-size: 2.8vw;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+.section5__cell2 {
+  background-color: #99a18e4d;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+.section5__text {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  font-size: 1vw;
+}
+.section5__img1 {
+  position: relative;
+  bottom: 15%;
+  width: 55vw;
+  height: 40vw;
+}
+.section5__button {
+  background-color: #545a2f;
+  border: #545a2f;
+  color: #ffffff;
+  width: 15vw;
+  height: 2.5vw;
+  font-size: 1vw;
+  position: relative;
+  right: 16vw;
+  top: 3vw;
 }
