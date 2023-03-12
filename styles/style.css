@@ -206,6 +206,7 @@ body {
   font-size: 1.1vw;
 }
 .section4__button {
+  margin-top: 2%;
   position: relative;
   left: 20%;
   top: 5%;
