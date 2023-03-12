@@ -206,10 +206,9 @@ body {
   font-size: 1.1vw;
 }
 .section4__button {
-  margin-top: 2%;
   position: relative;
   left: 20%;
-  top: 5%;
+  top: 10%;
   background-color: #545a2f;
   border: #545a2f;
   color: #ffffff;
